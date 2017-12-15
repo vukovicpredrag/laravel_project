@@ -11,6 +11,23 @@
 |
 */
 
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/album', function () {
+    return view('posts/layout');
+});
+
+
+Route::get('/task/{task}', function($id){
+
+
+    dd($id);
 });
